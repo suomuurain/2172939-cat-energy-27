@@ -1,0 +1,22 @@
+@use "global/variables.scss" as *;
+@use "global/mixins.scss" as *;
+
+.card__link {
+  text-decoration: none;
+}
+
+.card__subtitle {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-basic-black;
+  text-transform: uppercase;
+}
+
+.card__desc {
+  @include list-reset;
+}

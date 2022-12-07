@@ -1,0 +1,70 @@
+@use "global/variables.scss" as *;
+@use "global/mixins.scss" as *;
+
+.example {
+  background-color: $color-bg-gray-2;
+  padding: 25px 0 40px;
+}
+
+.example__title {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: $color-basic-black;
+}
+
+.example__list {
+  @include list-reset;
+}
+
+.example__description {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-special-dark-grey;
+}
+
+.example__item-name {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  text-align: center;
+  color: $color-special-dark-grey;
+}
+
+.example__item-value {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: $color-basic-black;
+}
+
+.example__total {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-basic-black;
+}

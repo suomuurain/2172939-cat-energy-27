@@ -1,0 +1,39 @@
+@use "global/variables.scss" as *;
+@use "global/mixins.scss" as *;
+
+.advantages {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 49px;
+}
+
+.advantages__title {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: $color-basic-black;
+}
+
+.advantages__list {
+  @include list-reset;
+}
+
+.advantages__item {
+  margin-bottom: 24px;
+}
+
+.advantages__description {
+  margin: 0;
+  padding: 0 20px 0 80px;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-special-dark-grey;
+}

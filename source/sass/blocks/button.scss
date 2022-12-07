@@ -1,0 +1,26 @@
+@use "global/variables.scss" as *;
+@use "global/mixins.scss" as *;
+
+.button {
+  display: inline-block;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: $color-basic-white;
+  background-color: $color-basic-green;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 10px 109px;
+}
+
+.button--secondary {
+  color: $color-special-dark-grey;
+  background-color: $color-bg-basic-grey;
+  padding: 10px 94px;
+}
