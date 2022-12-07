@@ -1,0 +1,21 @@
+@use "global/variables.scss" as *;
+@use "global/mixins.scss" as *;
+
+.catalog {
+  padding: 27px 0 0;
+}
+
+.catalog__title {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: $color-basic-black;
+}
+
+.catalog__list {
+  @include list-reset;
+}

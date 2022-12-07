@@ -1,0 +1,33 @@
+@use "global/variables.scss" as *;
+@use "global/mixins.scss" as *;
+
+.catalog-suplement__title {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: $color-basic-black;
+}
+
+.catalog-suplement__list {
+  @include list-reset;
+}
+
+.catalog-suplement__subtitle {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $color-special-dark-grey-2;
+}
+
+.catalog-suplement__desc-suplement {
+  @include list-reset;
+}

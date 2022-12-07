@@ -1,0 +1,19 @@
+@use "global/variables.scss" as *;
+@use "global/mixins.scss" as *;
+
+.promo {
+  margin: 35px 0 35px;
+  background-color: $color-basic-green;
+}
+
+.promo__description {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: $color-basic-white;
+}

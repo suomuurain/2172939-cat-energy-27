@@ -1,0 +1,6 @@
+@use "global/mixins.scss" as *;
+
+
+.visually-hidden {
+  @include visually-hidden;
+}

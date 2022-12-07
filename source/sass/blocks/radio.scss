@@ -1,0 +1,6 @@
+@use "global/variables.scss" as *;
+@use "global/mixins.scss" as *;
+
+.radio__list {
+  @include list-reset;
+}

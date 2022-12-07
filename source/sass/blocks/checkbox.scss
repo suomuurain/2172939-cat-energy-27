@@ -1,0 +1,21 @@
+@use "global/variables.scss" as *;
+@use "global/mixins.scss" as *;
+
+.checkbox__fieldset {
+  border: none;
+}
+
+.checkbox__title {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: $color-basic-black;
+}
+
+.checkbox__list {
+  @include list-reset;
+}

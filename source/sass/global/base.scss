@@ -1,0 +1,25 @@
+@use "global/variables.scss" as *;
+
+body {
+  min-width: 320px;
+  margin: 0 auto;
+  min-height: 100%;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-basic-black;
+  background-color: $color-basic-white;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0;
+  width: 320px;
+}
