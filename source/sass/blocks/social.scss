@@ -1,7 +1,9 @@
 @use "global/variables.scss" as *;
 @use "global/mixins.scss" as *;
 
-
 .social__list {
   @include list-reset;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }

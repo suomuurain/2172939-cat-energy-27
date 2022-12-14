@@ -1,6 +1,11 @@
 @use "global/variables.scss" as *;
 @use "global/mixins.scss" as *;
 
+.card__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .card__link {
   text-decoration: none;
 }
@@ -20,3 +25,11 @@
 .card__desc {
   @include list-reset;
 }
+
+@media (min-width: $tablet-width) {
+  .card__container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
