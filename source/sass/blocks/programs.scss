@@ -3,16 +3,36 @@
 
 .programs {
   background-color: $color-basic-white;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 41px;
+  }
 }
 
 .programs__list {
   @include list-reset;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .programs__item {
   margin: 0 0 20px;
   padding: 20px 20px 18px;
   background-color: $color-bg-basic-grey;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:nth-child(odd) {
+      margin-right: 80px;
+    }
+  }
 }
 
 .programs__subtitle {
@@ -49,27 +69,4 @@
   text-transform: uppercase;
   color: $color-basic-black;
   text-decoration: none;
-}
-
-@media (min-width: $tablet-width) {
-  .programs__item {
-    margin: 0;
-    margin-bottom: 30px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .programs {
-    margin-bottom: 41px;
-  }
-
-  .programs__list {
-    @include list-reset;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .programs__item:nth-child(odd) {
-    margin-right: 80px;
-  }
 }

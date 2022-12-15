@@ -1,6 +1,13 @@
 @use "global/variables.scss" as *;
 @use "global/mixins.scss" as *;
 
+.contacts__inner-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .contacts__fieldset {
   border: none;
 }

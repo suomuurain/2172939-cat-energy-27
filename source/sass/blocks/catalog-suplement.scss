@@ -1,6 +1,21 @@
 @use "global/variables.scss" as *;
 @use "global/mixins.scss" as *;
 
+.catalog-suplement__container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.catalog-suplement__inner-wrapper {
+  display: flex;
+  max-width: 896px;
+
+  @media (min-width: $desktop-width) {
+    max-width: 896px;
+  }
+}
+
 .catalog-suplement__title {
   margin: 0;
   padding: 0;
@@ -14,7 +29,41 @@
 
 .catalog-suplement__list {
   @include list-reset;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
+
+.catalog-suplement__item {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.catalog-suplement__inner-container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 
 .catalog-suplement__subtitle {
   margin: 0;
@@ -34,48 +83,8 @@
   justify-content: space-between;
 }
 
-@media (min-width: $tablet-width) {
-  .catalog-suplement__inner-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .catalog-suplement__desc-suplement {
-    display: flex;
-    justify-content: end;
-    width: 100%;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .catalog-suplement__inner-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 245px 245px;
-    column-gap: 80px;
-  }
-
-  .catalog-suplement__list {
-    grid-column: 1/4;
-  }
-
-  .catalog-suplement__item {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-
-  .catalog-suplement__inner-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .catalog-suplement__desc-suplement {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-
-  .catalog-suplement__button {
+.catalog-suplement__button {
+  @media (min-width: $desktop-width) {
     width: 245px;
     padding: 8px 26px;
   }

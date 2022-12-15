@@ -5,6 +5,16 @@
   border: 2px solid $color-border-basic-grey;
 }
 
+.pagination__container {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .pagination__link {
   text-decoration: none;
 }
@@ -32,16 +42,4 @@
   line-height: 16px;
   text-align: center;
   color: $color-special-dark-grey;
-}
-
-.pagination__container {
-  display: flex;
-  flex-direction: column;
-}
-
-@media (min-width: $tablet-width) {
-  .pagination__container {
-    display: flex;
-    justify-content: center;
-  }
 }

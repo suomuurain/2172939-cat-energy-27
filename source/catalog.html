@@ -9,33 +9,33 @@
   </head>
   <body class="page__body">
 
-    <header class="main-header">
-      <div class="container">
-        <div class="main-header__wrapper">
-          <a class="main-header__logo logo-cat" href="#">
-            <img class="logo-cat__icon" alt="Логотип Кэт энерджи." src="#">
-          </a>
-          <a class="main-header__logo logo-text" href="#">
-            <img class="logo-text__icon" alt="Логотип Кэт энерджи." src="#">
-          </a>
-          <button class="main-header__toggle main-header__toggle--closed" type="button">
-            <span class="visually-hidden">Открыть меню.</span>
-          </button>
-          <nav class="main-header__main-nav main-nav">
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="index.html">Главная</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link main-nav__link--current" href="catalog.html">Каталог продукции</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link" href="form.html">Подбор программы</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+    <header class="main-header container">
+      <div class="main-header__wrapper">
+        <a class="main-header__logo logo-cat" href="#">
+          <img class="logo-cat__icon" alt="Логотип Кэт энерджи." src="#">
+        </a>
+        <a class="main-header__logo logo-text" href="#">
+          <img class="logo-text__icon" alt="Логотип Кэт энерджи." src="#">
+        </a>
+        <button class="main-header__toggle main-header__toggle--closed" type="button">
+          <span class="visually-hidden">Открыть меню.</span>
+        </button>
       </div>
+      <nav class="main-header__main-nav main-nav">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--current" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <main>
@@ -268,57 +268,59 @@
         <div class="container">
           <div class="catalog-suplement__wrapper">
             <h2 class="catalog-suplement__title">Дополнительные товары</h2>
-            <div class="catalog-suplement__inner-wrapper">
-              <ul class="catalog-suplement__list">
-                <li class="catalog-suplement__item">
-                  <div class="catalog-suplement__inner-container">
-                    <h3 class="catalog-suplement__subtitle">Сахарозаменитель</h3>
-                    <dl class="catalog-suplement__desc-suplement desc-suplement">
-                      <dt class="desc-suplement__name">1 упаковка (100 г)</dt>
-                      <dd class="desc-suplement__value">200 ₽</dd>
-                    </dl>
-                  </div>
-                  <div class="catalog-suplement__wrapper-button">
-                    <button class="catalog-suplement__button button" type="button">Заказать</button>
-                  </div>
-                </li>
-                <li class="catalog-suplement__item">
-                  <div class="catalog-suplement__inner-container">
-                    <h3 class="catalog-suplement__subtitle">Питьевая вода</h3>
-                    <dl class="catalog-suplement__desc-suplement desc-suplement">
-                      <dt class="desc-suplement__name">5 литров</dt>
-                      <dd class="desc-suplement__value">50 ₽</dd>
-                    </dl>
-                  </div>
-                  <div class="catalog-suplement__wrapper-button">
-                    <button class="catalog-suplement__button button" type="button">Заказать</button>
-                  </div>
-                </li>
-                <li class="catalog-suplement__item">
-                  <div class="catalog-suplement__inner-container">
-                    <h3 class="catalog-suplement__subtitle">Молоко</h3>
-                    <dl class="catalog-suplement__desc-suplement desc-suplement">
-                      <dt class="desc-suplement__name">1 литр</dt>
-                      <dd class="desc-suplement__value">100 ₽</dd>
-                    </dl>
-                  </div>
-                  <div class="catalog-suplement__wrapper-button">
-                    <button class="catalog-suplement__button button" type="button">Заказать</button>
-                  </div>
-                </li>
-                <li class="catalog-suplement__item">
-                  <div class="catalog-suplement__inner-container">
-                    <h3 class="catalog-suplement__subtitle">Витамины</h3>
-                    <dl class="catalog-suplement__desc-suplement desc-suplement">
-                      <dt class="desc-suplement__name">1 упаковка (30 г)</dt>
-                      <dd class="desc-suplement__value">300 ₽</dd>
-                    </dl>
-                  </div>
-                  <div class="catalog-suplement__wrapper-button">
-                    <button class="catalog-suplement__button button" type="button">Заказать</button>
-                  </div>
-                </li>
-              </ul>
+            <div class="catalog-suplement__container">
+              <div class="catalog-suplement__inner-wrapper">
+                <ul class="catalog-suplement__list">
+                  <li class="catalog-suplement__item">
+                    <div class="catalog-suplement__inner-container">
+                      <h3 class="catalog-suplement__subtitle">Сахарозаменитель</h3>
+                      <dl class="catalog-suplement__desc-suplement desc-suplement">
+                        <dt class="desc-suplement__name">1 упаковка (100 г)</dt>
+                        <dd class="desc-suplement__value">200 ₽</dd>
+                      </dl>
+                    </div>
+                    <div class="catalog-suplement__wrapper-button">
+                      <button class="catalog-suplement__button button" type="button">Заказать</button>
+                    </div>
+                  </li>
+                  <li class="catalog-suplement__item">
+                    <div class="catalog-suplement__inner-container">
+                      <h3 class="catalog-suplement__subtitle">Питьевая вода</h3>
+                      <dl class="catalog-suplement__desc-suplement desc-suplement">
+                        <dt class="desc-suplement__name">5 литров</dt>
+                        <dd class="desc-suplement__value">50 ₽</dd>
+                      </dl>
+                    </div>
+                    <div class="catalog-suplement__wrapper-button">
+                      <button class="catalog-suplement__button button" type="button">Заказать</button>
+                    </div>
+                  </li>
+                  <li class="catalog-suplement__item">
+                    <div class="catalog-suplement__inner-container">
+                      <h3 class="catalog-suplement__subtitle">Молоко</h3>
+                      <dl class="catalog-suplement__desc-suplement desc-suplement">
+                        <dt class="desc-suplement__name">1 литр</dt>
+                        <dd class="desc-suplement__value">100 ₽</dd>
+                      </dl>
+                    </div>
+                    <div class="catalog-suplement__wrapper-button">
+                      <button class="catalog-suplement__button button" type="button">Заказать</button>
+                    </div>
+                  </li>
+                  <li class="catalog-suplement__item">
+                    <div class="catalog-suplement__inner-container">
+                      <h3 class="catalog-suplement__subtitle">Витамины</h3>
+                      <dl class="catalog-suplement__desc-suplement desc-suplement">
+                        <dt class="desc-suplement__name">1 упаковка (30 г)</dt>
+                        <dd class="desc-suplement__value">300 ₽</dd>
+                      </dl>
+                    </div>
+                    <div class="catalog-suplement__wrapper-button">
+                      <button class="catalog-suplement__button button" type="button">Заказать</button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
               <div class="catalog-suplement__promo promo">
                 <h3 class="visually-hidden">Промоакция.</h3>
                 <p class="promo__description">Закажите все <br> и получите чехол для <br> кота в подарок!</p>
@@ -329,16 +331,14 @@
       </section>
 
       <section class="address address--darker">
-        <div class="container">
-          <div class="address__wrapper">
-            <div class="address__inner-wrapper">
-              <h2 class="visually-hidden">Адрес.</h2>
-              <strong class="address__title">Приглашаем <br>к сотрудничеству <br>дилеров!</strong>
-              <a class="address__link" href="https://goo.gl/maps/kKwhGeTVw9mP2m4A6">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</a>
-            </div>
+        <div class="address__wrapper">
+          <h2 class="visually-hidden">Адрес.</h2>
+          <div class="address__inner-wrapper">
+            <strong class="address__title">Приглашаем <br>к сотрудничеству <br>дилеров!</strong>
+            <a class="address__link" href="https://goo.gl/maps/kKwhGeTVw9mP2m4A6">ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург</a>
           </div>
+          <iframe class="address__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d514.2922488054686!2d30.323176509526213!3d59.938689706536145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1669739810819!5m2!1sru!2sru" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <iframe class="address__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d514.2922488054686!2d30.323176509526213!3d59.938689706536145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1669739810819!5m2!1sru!2sru" width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
     </main>
 

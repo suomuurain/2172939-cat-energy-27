@@ -20,6 +20,10 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $color-special-black;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 45px 0 0;
+  }
 }
 
 .address__link {
@@ -32,9 +36,43 @@
   line-height: 20px;
   color: $color-special-dark-grey;
   text-decoration: none;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 0 45px;
+  }
 }
 
 .address__map {
   width: 100%;
+  height: 362px;
   display: block;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+}
+
+.address__wrapper {
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
+.address__inner-wrapper {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 56px 80px;
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    z-index: 1;
+    background-color: $color-basic-white;
+  }
 }

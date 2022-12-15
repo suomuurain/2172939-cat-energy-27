@@ -4,6 +4,10 @@
 .promo {
   margin: 35px 0 35px;
   background-color: $color-basic-green;
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
 }
 
 .promo__description {
