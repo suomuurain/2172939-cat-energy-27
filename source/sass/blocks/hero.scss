@@ -2,10 +2,64 @@
 @use "global/mixins.scss" as *;
 
 .hero {
-  background-color: $color-bg-basic-green-85;
   position: relative;
 
-  &::after {
+  @media (min-width: $desktop-width) {
+    &::before {
+      position: absolute;
+      content: " ";
+      width: 50%;
+      height: 694px;
+      background-image: url("../img/cat-background-hero-mobile.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      z-index: -2;
+      top: -100px;
+      right: 0;
+    }
+
+    &::after {
+      position: absolute;
+      content: " ";
+      width: 50%;
+      height: 694px;
+      background-color: $color-bg-basic-green-85;
+      z-index: -1;
+      top: -100px;
+      right: 0;
+    }
+  }
+}
+
+
+.hero__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 810px;
+    align-items: flex-start;
+    padding-left: 117px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 694px;
+    align-items: flex-start;
+    padding-left: 190px;
+    margin-bottom: 82px;
+  }
+
+  /*убрать из разметки src="img/can-content-hero-mobile.jpg*/
+
+  &::before {
+    position: absolute;
     content: " ";
     width: 100%;
     height: 302px;
@@ -13,16 +67,33 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    z-index: -2;
+    top: 0;
+    left: 0;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &::after {
     position: absolute;
+    content: " ";
+    width: 100%;
+    height: 302px;
+    background-color: $color-bg-basic-green-85;
     z-index: -1;
     top: 0;
     left: 0;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
-
 .hero__title {
-  margin: 0;
+  margin: 0 0 25px;
   padding: 0;
   font-family: "Oswald", sans-serif;
   font-style: normal;

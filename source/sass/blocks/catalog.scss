@@ -6,8 +6,8 @@
 }
 
 .catalog__title {
-  margin: 0;
-  padding: 0;
+  margin: 0 0 9px;
+  padding: 0 0 40px;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -18,4 +18,21 @@
 
 .catalog__list {
   @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+    row-gap: 63px;
+  }
+}
+
+.catalog__card {
+  padding-bottom: 23px;
 }

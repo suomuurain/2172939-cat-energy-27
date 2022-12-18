@@ -3,8 +3,22 @@
 
 .main-nav__list {
   @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
+.main-nav__item {
+  @media (min-width: $tablet-width) {
+    margin-right: 34px;
+  }
+}
 
 .main-nav__link {
   margin: 0;

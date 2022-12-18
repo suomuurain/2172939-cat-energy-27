@@ -18,4 +18,16 @@
 
 .checkbox__list {
   @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 32px;
+    column-gap: 123px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 104px;
+  }
 }

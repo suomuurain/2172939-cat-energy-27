@@ -1,6 +1,13 @@
 @use "global/variables.scss" as *;
 @use "global/mixins.scss" as *;
 
+.application {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .application__order {
   border: none;
 }

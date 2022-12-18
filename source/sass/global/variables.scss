@@ -1,4 +1,3 @@
-/*colors*/
 /*text*/
 
 $color-basic-white: #ffffff;
@@ -20,6 +19,7 @@ $color-border-special-grey: #cdcdcd;
 $color-border-form: #e7e7e7;
 $color-border-special-grey-2-light: #ebebeb;
 $color-border-status-error: #ff8282;
+$color-border-basic-grey: #f2f2f2;
 
 /*button & decoration*/
 
@@ -30,3 +30,9 @@ $color-button-secondary: #ebebeb;
 /*fill*/
 
 $color-fill-special-grey-2: #666666;
+
+/*viewports*/
+
+$tablet-width: 768px;
+$desktop-width: 1440px;
+$mobile-width-only: 767px;

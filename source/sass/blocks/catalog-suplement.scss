@@ -1,6 +1,21 @@
 @use "global/variables.scss" as *;
 @use "global/mixins.scss" as *;
 
+.catalog-suplement__container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.catalog-suplement__inner-wrapper {
+  display: flex;
+  max-width: 896px;
+
+  @media (min-width: $desktop-width) {
+    max-width: 896px;
+  }
+}
+
 .catalog-suplement__title {
   margin: 0;
   padding: 0;
@@ -14,7 +29,41 @@
 
 .catalog-suplement__list {
   @include list-reset;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
+
+.catalog-suplement__item {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.catalog-suplement__inner-container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 
 .catalog-suplement__subtitle {
   margin: 0;
@@ -30,4 +79,13 @@
 
 .catalog-suplement__desc-suplement {
   @include list-reset;
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-suplement__button {
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    padding: 8px 26px;
+  }
 }

@@ -1,2 +1,20 @@
 @use "global/variables.scss" as *;
 @use "global/mixins.scss" as *;
+
+.main-header {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.main-header__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

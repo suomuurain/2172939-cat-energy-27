@@ -19,7 +19,23 @@ body {
 }
 
 .container {
+  min-width: 320px;
   margin: 0 auto;
-  padding: 0;
-  width: 320px;
+  padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    min-width: 768px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    min-width: 1440px;
+    margin: 0 auto;
+    padding: 0 110px;
+  }
 }

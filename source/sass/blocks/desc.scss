@@ -1,6 +1,11 @@
 @use "global/variables.scss" as *;
 @use "global/mixins.scss" as *;
 
+.desc__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 140px;
+}
 
 .desc__name {
   margin: 0;
