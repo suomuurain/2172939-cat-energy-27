@@ -59,16 +59,19 @@
 }
 
 .address__inner-wrapper {
-  padding: 0 20px;
+  padding: 26px 20px;
+  min-height: 112px;
   display: flex;
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    padding: 0 70px;
+    min-height: 199px;
+    padding: 56px 70px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 56px 80px;
+    height: 198px;
+    padding: 56px 80px 0;
     position: absolute;
     top: 95px;
     left: 110px;
