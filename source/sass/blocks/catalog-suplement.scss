@@ -8,11 +8,13 @@
 }
 
 .catalog-suplement__inner-wrapper {
-  display: flex;
   max-width: 896px;
 
   @media (min-width: $desktop-width) {
+    display: flex;
     max-width: 896px;
+    margin-bottom: 86px;
+    width: 100%;
   }
 }
 
@@ -25,6 +27,11 @@
   font-size: 24px;
   line-height: 24px;
   color: $color-basic-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .catalog-suplement__list {
@@ -35,25 +42,43 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
+    border: 1px solid $color-border-special-grey;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    width: 100%;
   }
 }
 
 .catalog-suplement__item {
+  padding: 13px 0 20px;
+  border-bottom: 1px solid $color-border-special-grey;
+
+  &:first-child {
+    border-top: 1px solid $color-border-special-grey;
+
+    @media (min-width: $tablet-width) {
+      border-top: none;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 26px 38px 28px 37px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 16px 0 16px;
   }
 }
 
@@ -61,12 +86,18 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    margin: 0 0 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    width: 100%;
+    align-items: center;
   }
 }
 
-
 .catalog-suplement__subtitle {
-  margin: 0;
+  margin: 0 0 13px;
   padding: 0;
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -75,15 +106,48 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $color-special-dark-grey-2;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .catalog-suplement__desc-suplement {
   @include list-reset;
+  margin: 0 0 15px;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding-right: 40px;
+    justify-content: space-between;
+  }
 }
 
+/*
+.catalog-suplement__wrapper-button {
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+*/
+
 .catalog-suplement__button {
+  margin: 0;
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 10px 109px;
+  font-size: 16px;
+  line-height: 20px;
+
   @media (min-width: $desktop-width) {
     width: 245px;
     padding: 8px 26px;

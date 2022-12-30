@@ -4,7 +4,6 @@
 .main-header {
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
@@ -13,8 +12,133 @@
   }
 }
 
-.main-header__toggle {
+.main-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0 17px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.main-header__logo {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  width: 100%;
+}
+
+.main-header__logo-icon {
+  width: 34px;
+  height: 38px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 52px;
+    margin-top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+    margin-top: 53px;
+  }
+}
+
+.main-header__logo-text-icon {
+  margin: auto;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+.main-header__toggle {
+  position: relative;
+  top: 14px;
+  right: 0;
+  left: 0;
+  width: 16px;
+  height: 24px;
+  padding-left: 30px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-header__toggle--nojs {
+  display: none;
+}
+
+.main-header__toggle--close::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 10px;
+  width: 24px;
+  height: 2px;
+  background-color: $color-basic-black;
+  box-shadow: 0 8px 0 0 $color-basic-black, 0 16px 0 0 $color-basic-black;
+}
+
+.main-header__toggle--open {
+  position: relative;
+  top: 9px;
+  right: -2px;
+  height: 24px;
+  padding-top: 3px;
+  padding-left: 30px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 10px;
+    width: 24px;
+    height: 2px;
+    background-color: $color-basic-black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.main-header__toggle:active {
+  opacity: 30%;
 }

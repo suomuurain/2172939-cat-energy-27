@@ -2,17 +2,73 @@
 @use "global/mixins.scss" as *;
 
 .promo {
-  margin: 35px 0 35px;
-  background-color: $color-basic-green;
+  margin: 35px auto 35px;
+  position: relative;
+  width: 100%;
+  height: 290px;
+  background-color: $color-bg-basic-green-85;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/cat-bag-background-promo-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/cat-bag-background-promo-mobile@2x.jpg");
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 78px;
+    height: 80px;
+    top: 59px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-image: url("../img/icon-logo/promo-present-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+      top: 57px;
+      left: 77px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 56px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 200px;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/cat-bag-background-promo-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/cat-bag-background-promo-tablet@2x.jpg");
+    }
+  }
 
   @media (min-width: $desktop-width) {
     width: 245px;
+    height: 288px;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/cat-bag-background-promo-desktop.jpg");
+    margin: 0 0 35px 86px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/cat-bag-background-promo-desktop@2x.jpg");
+    }
   }
 }
 
 .promo__description {
   margin: 0;
-  padding: 0;
+  padding: 187px 0 0;
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -20,4 +76,14 @@
   line-height: 20px;
   text-align: center;
   color: $color-basic-white;
+
+  @media (min-width: $tablet-width) {
+    padding: 71px 0 0 422px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 185px 0 0;
+    text-align: center;
+  }
 }

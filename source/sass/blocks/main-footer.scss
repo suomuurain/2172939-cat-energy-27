@@ -5,7 +5,11 @@
   background-color: $color-bg-basic-grey;
 
   @media (min-width: $tablet-width) {
-    padding: 58px 0;
+    padding: 19px 0 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 24px 0 28px;
   }
 }
 
@@ -16,36 +20,37 @@
   }
 }
 
-.main-footer__logo {
+.main-footer__logo-text {
   display: flex;
   justify-content: center;
   padding: 39px 0 32px;
-  outline: 5px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -5px;
+  border-bottom: 1px solid $color-border-gray;
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    border-bottom: none;
+    align-items: center;
   }
 }
 
 .main-footer__social {
   display: flex;
   justify-content: center;
-  padding: 20px 0;
-  outline: 5px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -5px;
+  padding: 22px 0;
+  border-bottom: 1px solid $color-border-gray;
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    border-bottom: none;
+    align-items: center;
   }
 }
 
 .main-footer__logo-htmlacademy {
   display: flex;
   justify-content: space-between;
-  padding: 22px 0;
-  outline: 5px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -5px;
+  align-items: center;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     padding: 0;

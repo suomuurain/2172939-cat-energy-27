@@ -16,6 +16,16 @@
   font-size: 12px;
   line-height: 16px;
   color: $color-special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
 
 .desc__value {
@@ -27,4 +37,14 @@
   font-size: 12px;
   line-height: 16px;
   color: $color-special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }

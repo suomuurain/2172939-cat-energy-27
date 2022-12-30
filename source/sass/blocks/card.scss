@@ -1,6 +1,20 @@
 @use "global/variables.scss" as *;
 @use "global/mixins.scss" as *;
 
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 245px;
+  }
+}
+
 .card__container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -15,8 +29,13 @@
   text-decoration: none;
 }
 
+.card__wrapper {
+  width: 140px;
+  margin-bottom: 22px;
+}
+
 .card__subtitle {
-  margin: 0;
+  margin: 0 0 18px;
   padding: 0;
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -25,8 +44,103 @@
   line-height: 20px;
   color: $color-basic-black;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 21px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 21px;
+    font-size: 20px;
+    line-height: 21px;
+  }
 }
 
 .card__desc {
   @include list-reset;
+}
+
+.card__button {
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 10px 109px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.card__link-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__image {
+  display: block;
+}
+
+.card__image--chiсken-500 {
+  @media (min-width: $tablet-width) {
+    width: 161px;
+    height: 172px;
+  }
+}
+
+.card__image--chiсken-1000 {
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    height: 206px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 172px;
+    height: 196px;
+  }
+}
+
+.card__image--fish-500 {
+  @media (min-width: $tablet-width) {
+    width: 163px;
+    height: 174px;
+  }
+}
+
+.card__image--fish-1000 {
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 172px;
+    height: 196px;
+  }
+}
+
+.card__image--buckwheat-500 {
+  @media (min-width: $tablet-width) {
+    width: 161px;
+    height: 171px;
+  }
+}
+
+.card__image--buckwheat-1000 {
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 172px;
+    height: 196px;
+  }
+}
+
+.card__image--rice-500 {
+  @media (min-width: $tablet-width) {
+    width: 163px;
+    height: 174px;
+  }
 }

@@ -23,9 +23,75 @@
   padding: 20px 20px 18px;
   background-color: $color-bg-basic-grey;
 
+  &--slim {
+    background-image: url("../img/index/slim-cat-programs-mobile.png");
+    background-repeat: no-repeat;
+    background-position: 21px 22px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/slim-cat-programs-mobile@2x.png");
+      background-size: 50px 53px;
+    }
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/index/slim-cat-programs-tablet.png");
+      background-repeat: no-repeat;
+      background-position: 446px 81px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index/slim-cat-programs-tablet@2x.png");
+        background-size: 200px 211px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/index/slim-cat-programs-desktop.png");
+      background-repeat: no-repeat;
+      background-position: 52px 41px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index/slim-cat-programs-desktop@2x.png");
+        background-size: 100px 106px;
+      }
+    }
+  }
+
+  &--pro {
+    background-image: url("../img/index/pro-cat-programs-mobile.png");
+    background-repeat: no-repeat;
+    background-position: 13px 24px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/pro-cat-programs-mobile@2x.png");
+      background-size: 67px 50px;
+    }
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/index/pro-cat-programs-tablet.png");
+      background-repeat: no-repeat;
+      background-position: 412px 91px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index/pro-cat-programs-tablet@2x.png");
+        background-size: 268px 200px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/index/pro-cat-programs-desktop.png");
+      background-repeat: no-repeat;
+      background-position: 33px 47px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index/pro-cat-programs-desktop@2x.png");
+        background-size: 134px 100px;
+      }
+    }
+  }
+
   @media (min-width: $tablet-width) {
-    margin: 0;
-    margin-bottom: 30px;
+    margin: 0 0 30px;
+    padding: 77px 52px 53px;
   }
 
   @media (min-width: $desktop-width) {
@@ -36,26 +102,55 @@
 }
 
 .programs__subtitle {
-  margin: 0;
+  margin: 10px 0 29px;
   padding: 0;
+  padding-left: 71px;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 0;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 73px;
+    padding-left: calc(214px - 52px);
+  }
 }
 
 .programs__description {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 23px;
+  margin: 0 0 15px;
+  padding: 0 0 23px;
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: $color-special-dark-grey;
+  border-bottom: 1px solid $color-border-gray;
+
+  @media (min-width: $tablet-width) {
+    max-width: 340px;
+    margin-bottom: 48px;
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 457px;
+    padding: 0;
+    margin-bottom: 23px;
+  }
 }
 
 .programs__link {
@@ -69,4 +164,29 @@
   text-transform: uppercase;
   color: $color-basic-black;
   text-decoration: none;
+  position: relative;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/icon-logo/arrow-programs.svg");
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 12px;
+    top: 7px;
+    right: -47px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 7px;
+  }
 }
