@@ -3,33 +3,87 @@
 
 .contacts__inner-wrapper {
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 78px;
   }
 }
 
 .contacts__fieldset {
+  margin: 0;
+  padding: 26px 0 9px;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 47px;
+  }
+}
+
+.contacts__title-line {
+  position: relative;
+
+  ::before {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    width: 93%;
+    height: 2px;
+    background-color: #68b738;
+    top: 25%;
+
+    @media (min-width: $tablet-width) {
+      width: 108%;
+      left: -70px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 104%;
+    }
+  }
 }
 
 .contacts__title {
-  margin: 0;
-  padding: 0;
+  display: inline-block;
+  margin: 0 0 21px;
+  padding: 0 20px;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
   color: $color-basic-black;
+  background-color: $color-basic-white;
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 56px 30px;
+    padding: 0 42px 0 39px;
     font-size: 36px;
     line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 56px 70px;
+    padding: 0 40px 0 40px;
+  }
+}
+
+.contacts__group {
+  margin: 14px 0;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 20px 0;
   }
 }
 
 .contacts__text {
-  margin: 0;
+  margin: 0 10px 0 0;
   padding: 0;
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -38,16 +92,19 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $color-special-dark-grey;
+  white-space: nowrap;
 
   @media (min-width: $tablet-width) {
+    margin: 0 20px 0 0;
     font-size: 20px;
     line-height: 30px;
   }
 }
 
 .contacts__field {
+  width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 15px 40px 13px 15px;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -55,8 +112,58 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $color-special-dark-grey;
+  border: 1px solid $color-border-form;
+
+  &:hover {
+    outline: 1px solid $color-border-special-grey;
+  }
+
+  &:focus {
+    outline: 2px solid $color-special-dark-grey;
+  }
+
+  &:invalid {
+    outline: 2px solid $color-border-status-error;
+  }
+
+  &--email {
+    background-image: url("../img/icon-logo/email-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center right 7%;
+
+    &:focus {
+      background-image: url("../img/icon-logo/email-icon-focus.svg");
+    }
+
+    &:invalid {
+      background-image: url("../img/icon-logo/email-icon-invalid.svg");
+    }
+
+    @media (min-width: $tablet-width) {
+      background-position: center right 3%;
+    }
+  }
+
+  &--phone {
+    background-image: url("../img/icon-logo/phone-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center right 7%;
+
+    &:focus {
+      background-image: url("../img/icon-logo/phone-icon-focus.svg");
+    }
+
+    &:invalid {
+      background-image: url("../img/icon-logo/phone-icon-invalid.svg");
+    }
+
+    @media (min-width: $tablet-width) {
+      background-position: center right 3%;
+    }
+  }
 
   @media (min-width: $tablet-width) {
+    padding: 11px 40px 11px 20px;
     font-size: 20px;
     line-height: 30px;
   }

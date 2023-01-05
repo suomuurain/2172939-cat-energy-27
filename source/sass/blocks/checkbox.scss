@@ -2,22 +2,56 @@
 @use "global/mixins.scss" as *;
 
 .checkbox__fieldset {
+  margin: 0;
+  padding: 0;
   border: none;
 }
 
+.checkbox__title-line {
+  position: relative;
+
+  ::before {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    width: 93%;
+    height: 2px;
+    background-color: #68b738;
+    top: 25%;
+
+    @media (min-width: $tablet-width) {
+      width: 108%;
+      left: -70px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 104%;
+    }
+  }
+}
+
 .checkbox__title {
-  margin: 0;
-  padding: 0;
+  display: inline-block;
+  margin: 0 0 34px;
+  padding: 0 20px;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
   color: $color-basic-black;
+  background-color: $color-basic-white;
 
   @media (min-width: $tablet-width) {
+    margin: 0 0 57px 30px;
+    padding: 0 41px 0 40px;
     font-size: 36px;
     line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 57px 70px;
+    padding: 0 40px 0 40px;
   }
 }
 
@@ -27,12 +61,105 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 32px;
-    column-gap: 123px;
+    column-gap: 50px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
     column-gap: 104px;
+  }
+}
+
+.checkbox__item {
+  padding: 0 0 13px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+/*control*/
+.checkbox__label-control {
+  position: relative;
+  display: block;
+  padding: 0 0 0 45px;
+  line-height: 30px;
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 0 60px;
+    line-height: 40px;
+  }
+}
+
+.checkbox__mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border: 1px solid $color-border-special-grey;
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.checkbox__label-control:hover .checkbox__mark {
+  border-color: #bababa;
+}
+
+.checkbox__input:focus + .checkbox__mark {
+  outline: 2px solid $color-special-dark-grey;
+}
+
+.checkbox__input[type="checkbox"]:checked + .checkbox__mark::before {
+  position: absolute;
+  top: 7px;
+  left: 5px;
+  width: 19px;
+  height: 15px;
+  background-color: $color-basic-white;
+  background-image: url("../img/icon-logo/checkbox-icon.svg");
+  background-repeat: no-repeat;
+  content: "";
+
+  @media (min-width: $tablet-width) {
+    top: 10px;
+    left: 8px;
+    width: 24px;
+    height: 19px;
+    background-image: url("../img/icon-logo/checkbox-icon-tablet.svg");
+  }
+}
+
+.checkbox__label {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $color-special-dark-grey-2;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }

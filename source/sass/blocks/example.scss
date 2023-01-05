@@ -4,7 +4,7 @@
 .example {
   background-color: $color-bg-gray-2;
   padding: 25px 0 40px;
-  height: 659px;
+  min-height: 659px;
 
   @media (min-width: $tablet-width) {
     background-color: $color-basic-white;
@@ -241,14 +241,14 @@
   }
 }
 
+/*слайдер*/
 .example__inner-wrapper-image {
   width: 280px;
   height: 256px;
-  outline: 5px solid #ff0000;
-  outline-offset: -5px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     width: 560px;
@@ -257,5 +257,54 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 85px;
+  }
+}
+
+.example__image {
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    height: 512px;
+  }
+}
+
+.example__button-wrapper {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 100%;
+  top: 0;
+  left: calc(50% - 2px);
+  background-color: $color-fill-special-grey-2;
+  z-index: 1;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-basic-green;
+
+    .example__button {
+      background-image: url("../img/icon-logo/slider-button-hover.svg");
+    }
+  }
+
+  &:active {
+    background-color: $color-basic-green-2;
+    opacity: 0.6;
+  }
+}
+
+.example__button {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
+  left: calc(50% - 20px);
+  top: calc(50% - 22px);
+  background-image: url("../img/icon-logo/slider-button.svg");
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  border: none;
+
+  &:hover {
+    background-image: url("../img/icon-logo/slider-button-hover.svg");
   }
 }

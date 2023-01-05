@@ -123,9 +123,13 @@
             </div>
           </div>
           <div class="example__inner-wrapper-image">
-            <figure class="example__figure">
-              <img class="example__image" alt="Кот до и после с Кэт энерджи." src="#">
-            </figure>
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/index/cat-slider-tablet.png 1x, img/index/cat-slider-tablet@2x.png 2x">
+              <img class="example__image" alt="Кот до и после с Кэт энерджи." src="img/index/cat-slider-mobile.png" srcset="img/index/cat-slider-mobile@2x.png 2x" width="280" height="256">
+            </picture>
+            <div class="example__button-wrapper">
+              <button class="example__button" type="button"></button>
+            </div>
           </div>
         </div>
       </section>

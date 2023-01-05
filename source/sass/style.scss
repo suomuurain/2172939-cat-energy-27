@@ -28,17 +28,16 @@
 @use "blocks/application.scss";
 @use "blocks/comment.scss";
 @use "blocks/contacts.scss";
-@use "blocks/control.scss";
 @use "blocks/form.scss";
 @use "blocks/order.scss";
 @use "blocks/radio.scss";
+@use "blocks/checkbox.scss";
 
 /*catalog*/
 
 @use "blocks/card.scss";
 @use "blocks/catalog-suplement.scss";
 @use "blocks/catalog.scss";
-@use "blocks/checkbox.scss";
 @use "blocks/desc-suplement.scss";
 @use "blocks/desc.scss";
 @use "blocks/pagination.scss";
