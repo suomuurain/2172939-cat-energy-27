@@ -2,23 +2,65 @@
 @use "global/mixins.scss" as *;
 
 .comment__fieldset {
+  margin: 0;
+  padding: 0;
   border: none;
 }
 
+.comment__subtitle-line {
+  position: relative;
+
+  ::before {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    width: 93%;
+    height: 2px;
+    background-color: #68b738;
+    top: 25%;
+
+    @media (min-width: $tablet-width) {
+      width: 108%;
+      left: -70px;
+      top: 20%;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 104%;
+    }
+  }
+}
+
 .comment__subtitle {
-  margin: 0;
-  padding: 0;
+  display: inline-block;
+  margin: 0 0 37px;
+  padding: 0 20px;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
   color: $color-basic-black;
+  background-color: $color-basic-white;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 76px 30px;
+    padding: 0 38px 0 39px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 76px 70px;
+    padding: 0 40px 0 40px;
+  }
 }
 
 .comment__field {
-  margin: 0;
-  padding: 0;
+  width: 100%;
+  min-height: 150px;
+  margin: 0 0 22px;
+  padding: 10px 12px;
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -26,4 +68,29 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $color-special-dark-grey;
+  border: 1px solid $color-border-form;
+
+  &:hover {
+    outline: 1px solid $color-border-special-grey;
+  }
+
+  &:focus {
+    outline: 2px solid $color-special-dark-grey;
+  }
+
+  &:invalid {
+    outline: 2px solid $color-border-status-error;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 174px;
+    margin: 0 0 65px;
+    padding: 10px 19px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 67px;
+  }
 }

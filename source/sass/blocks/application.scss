@@ -3,15 +3,70 @@
 
 .application {
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 80px;
   }
 }
 
 .application__order {
+  margin: 0;
+  padding: 0 0 10px 0;
   border: none;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    left: -20px;
+    right: -20px;
+    bottom: 0;
+    background-color: $color-border-gray;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 52px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 49px 0;
+  }
 }
 
 .application__radio {
+  margin: 0;
+  padding: 22px 0 6px;
   border: none;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    left: -20px;
+    right: -20px;
+    bottom: 0;
+    background-color: $color-border-gray;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 75px;
+    padding: 25px 0 12px;
+    border: 1px solid $color-border-form;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 20px 0 65px;
+    padding: 25px 0 12px;
+    border: 1px solid $color-border-form;
+  }
 }

@@ -1,13 +1,53 @@
 @use "global/variables.scss" as *;
 @use "global/mixins.scss" as *;
 
+.card {
+  align-items: center;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    left: -20px;
+    right: -20px;
+    bottom: 0;
+    background-color: $color-border-special-grey-2-light;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    padding: 0 37px 39px;
+    background-image: linear-gradient(to bottom, #ffffff 80px, #f2f2f2 80px);
+    margin: 0;
+    height: calc(430px + 80px);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 30px 40px 35px;
+  }
+}
+
 .card__container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  margin-top: 11px;
+  margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
+    min-width: 252px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 180px;
   }
 }
 
@@ -15,8 +55,22 @@
   text-decoration: none;
 }
 
+.card__wrapper {
+  width: 140px;
+  margin-bottom: 9px;
+
+  @media (min-width: $tablet-width) {
+    width: 252px;
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 180px;
+  }
+}
+
 .card__subtitle {
-  margin: 0;
+  margin: 0 0 18px;
   padding: 0;
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -25,8 +79,139 @@
   line-height: 20px;
   color: $color-basic-black;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    margin-bottom: 21px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 21px;
+    font-size: 20px;
+    line-height: 21px;
+  }
 }
 
 .card__desc {
   @include list-reset;
+}
+
+.card__button {
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 10px 109px;
+  font-size: 16px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    padding: 10px 93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    padding: 10px 53px;
+  }
+}
+
+.card__link-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 140px;
+}
+
+.card__container-image {
+  @media (min-width: $tablet-width) {
+    margin-top: 8px;
+    margin-bottom: 34px;
+
+    &--chiсken-500 {
+      margin-top: 36px;
+    }
+
+    &--fish-500 {
+      margin-top: 34px;
+    }
+
+    &--buckwheat-500 {
+      margin-top: 37px;
+    }
+
+    &--rice-500 {
+      margin-top: 34px;
+    }
+  }
+}
+
+.card__image {
+  display: block;
+}
+
+.card__image--chiсken-500 {
+  @media (min-width: $tablet-width) {
+    width: 161px;
+    height: 172px;
+    top: -45px;
+  }
+}
+
+.card__image--chiсken-1000 {
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    height: 206px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 172px;
+    height: 196px;
+  }
+}
+
+.card__image--fish-500 {
+  @media (min-width: $tablet-width) {
+    width: 163px;
+    height: 174px;
+  }
+}
+
+.card__image--fish-1000 {
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 172px;
+    height: 196px;
+  }
+}
+
+.card__image--buckwheat-500 {
+  @media (min-width: $tablet-width) {
+    width: 161px;
+    height: 171px;
+  }
+}
+
+.card__image--buckwheat-1000 {
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 172px;
+    height: 196px;
+  }
+}
+
+.card__image--rice-500 {
+  @media (min-width: $tablet-width) {
+    width: 163px;
+    height: 174px;
+  }
 }

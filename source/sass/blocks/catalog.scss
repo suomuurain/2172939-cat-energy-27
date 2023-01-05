@@ -3,10 +3,20 @@
 
 .catalog {
   padding: 27px 0 0;
+  border-top: 1px solid $color-border-gray;
+
+  @media (min-width: $tablet-width) {
+    padding: 64px 0 0;
+    border-top: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 74px 0 0;
+  }
 }
 
 .catalog__title {
-  margin: 0 0 9px;
+  margin: 0;
   padding: 0 0 40px;
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -14,6 +24,31 @@
   font-size: 36px;
   line-height: 36px;
   color: $color-basic-black;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    left: -20px;
+    right: -20px;
+    bottom: 0;
+    background-color: $color-border-special-grey-2-light;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 82px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 84px;
+  }
 }
 
 .catalog__list {
@@ -27,12 +62,18 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 245px);
     column-gap: 80px;
     row-gap: 63px;
   }
 }
 
 .catalog__card {
-  padding-bottom: 23px;
+  padding-bottom: 25px;
+  padding-top: 8px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 39px;
+    padding-top: 0;
+  }
 }

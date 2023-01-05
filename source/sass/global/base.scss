@@ -22,20 +22,46 @@ body {
   min-width: 320px;
   margin: 0 auto;
   padding: 0 20px;
-}
 
-@media (min-width: $tablet-width) {
-  .container {
+  @media (min-width: $tablet-width) {
     min-width: 768px;
     margin: 0 auto;
     padding: 0 30px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .container {
-    min-width: 1440px;
+  @media (min-width: $desktop-width) {
+    width: 1440px;
     margin: 0 auto;
     padding: 0 110px;
+  }
+}
+
+.container--form {
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 768px;
+    margin: 0 auto;
+    padding: 0 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0 110px;
+  }
+}
+
+.br-none-for-tablet {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.br-none-for-mobile {
+  @media (max-width: $mobile-width-only) {
+    display: none;
   }
 }

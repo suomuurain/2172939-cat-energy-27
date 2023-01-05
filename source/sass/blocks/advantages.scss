@@ -4,10 +4,18 @@
 .advantages {
   margin: 0;
   padding: 0;
-  margin-bottom: 29px;
+  margin-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    padding-bottom: 47px;
+    border-bottom: 1px solid #e6e6e6;
+  }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 49px;
+    margin-bottom: 69px;
+    padding-bottom: 0;
+    border-bottom: none;
   }
 }
 
@@ -24,6 +32,8 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 32px;
+    font-size: 60px;
+    line-height: 60px;
   }
 }
 
@@ -33,21 +43,82 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 153px;
+    column-gap: 130px;
+    row-gap: 37px;
+    counter-reset: advantages;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 94px;
+    column-gap: 77px;
   }
 }
 
 .advantages__item {
   margin-bottom: 20px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    top: 0;
+    left: 0;
+    background-color: $color-basic-green;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--nutrition::before {
+    background-image: url("../img/index/icon-nutrition-advantages.svg");
+  }
+
+  &--flour::before {
+    background-image: url("../img/index/icon-flour-advantages.svg");
+  }
+
+  &--cutlery::before {
+    background-image: url("../img/index/icon-cutlery-advantages.svg");
+  }
+
+  &--time::before {
+    background-image: url("../img/index/icon-time-advantages.svg");
+  }
 
   @media (min-width: $tablet-width) {
+    min-width: 230px;
+    margin-bottom: 0;
     width: 230px;
+    height: 280px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 80px;
+      height: 80px;
+      top: 40px;
+      left: 0;
+      background-color: $color-basic-green;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &::after {
+      position: absolute;
+      content: counter(advantages, decimal) " ";
+      counter-increment: advantages;
+      top: 0;
+      left: 118px;
+      z-index: -2;
+      color: $color-bg-basic-grey;
+      font-family: "Oswald", sans-serif;
+      font-weight: 400;
+      font-size: 280px;
+      line-height: 280px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -57,7 +128,8 @@
 
 .advantages__description {
   margin: 0;
-  padding: 0 4px 0 80px;
+  padding: 3px 4px 3px 80px;
+  max-width: 280px;
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -66,6 +138,8 @@
   color: $color-special-dark-grey;
 
   @media (min-width: $tablet-width) {
+    padding: 151px 0 57px 0;
+    min-width: 250px;
     font-size: 16px;
     line-height: 24px;
   }

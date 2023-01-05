@@ -5,6 +5,14 @@
   display: flex;
   justify-content: space-between;
   width: 140px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 0 9px;
+    border-bottom: 1px solid $color-border-special-grey;
+  }
 }
 
 .desc__name {
@@ -16,6 +24,16 @@
   font-size: 12px;
   line-height: 16px;
   color: $color-special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
 
 .desc__value {
@@ -27,4 +45,14 @@
   font-size: 12px;
   line-height: 16px;
   color: $color-special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }

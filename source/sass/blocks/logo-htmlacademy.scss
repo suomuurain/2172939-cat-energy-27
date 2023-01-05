@@ -3,7 +3,7 @@
 
 .logo-htmlacademy__link {
   margin: 0;
-  padding: 0;
+  padding: 22px 0;
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -11,4 +11,20 @@
   line-height: 19px;
   color: $color-special-dark-grey;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    &--icon {
+      padding-left: 23px;
+    }
+  }
+}
+
+.logo-htmlacademy__link--icon:hover .logo-htmlacademy__icon,
+.logo-htmlacademy__link--icon:focus .logo-htmlacademy__icon {
+  stroke: $color-basic-green;
+}
+
+.logo-htmlacademy__link--icon:active .logo-htmlacademy__icon {
+  stroke: $color-basic-green;
+  opacity: 0.3;
 }
