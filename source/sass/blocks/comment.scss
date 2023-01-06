@@ -10,6 +10,12 @@
 .comment__subtitle-line {
   position: relative;
 
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 110px;
+  }
+
   ::before {
     position: absolute;
     content: "";
@@ -26,7 +32,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      width: 104%;
+      width: 100%;
+      left: 0;
     }
   }
 }
@@ -51,7 +58,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 76px 70px;
+    margin: 0 0 76px 0;
+    margin-left: -40px;
     padding: 0 40px 0 40px;
   }
 }
@@ -59,6 +67,7 @@
 .comment__field {
   width: 100%;
   min-height: 150px;
+  resize: none;
   margin: 0 0 22px;
   padding: 10px 12px;
   font-family: "Oswald", sans-serif;

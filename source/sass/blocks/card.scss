@@ -44,9 +44,12 @@
     flex-direction: column;
     align-items: center;
     margin: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media (min-width: $desktop-width) {
+    max-width: none;
     min-width: 180px;
   }
 }
@@ -60,12 +63,14 @@
   margin-bottom: 9px;
 
   @media (min-width: $tablet-width) {
-    width: 252px;
+    max-width: 450px;
+    min-width: 252px;
     margin-bottom: 33px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 180px;
+    max-width: none;
+    min-width: 180px;
   }
 }
 

@@ -4,6 +4,12 @@
 .catalog-suplement__title-line {
   position: relative;
 
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 110px;
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -12,6 +18,11 @@
     height: 2px;
     background-color: $color-basic-green;
     top: 50%;
+
+    @media (min-width: $desktop-width) {
+      width: 100%;
+      left: 0;
+    }
   }
 }
 
@@ -50,7 +61,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 76px 110px 81px 70px;
+    margin: 76px 110px 81px -40px;
     padding: 0 35px 0 40px;
   }
 }

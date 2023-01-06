@@ -54,6 +54,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 1440px;
     min-height: 694px;
     align-items: flex-start;
     padding-left: 190px;
