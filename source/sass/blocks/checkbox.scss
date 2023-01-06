@@ -10,12 +10,6 @@
 .checkbox__title-line {
   position: relative;
 
-  @media (min-width: $desktop-width) {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 110px;
-  }
-
   ::before {
     position: absolute;
     content: "";
@@ -34,6 +28,14 @@
       width: 100%;
       left: 0;
     }
+  }
+}
+
+.checkbox__title-line-container {
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 110px;
   }
 }
 
@@ -57,8 +59,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 57px 0;
-    margin-left: -40px;
+    margin: 0 0 57px -40px;
     padding: 0 40px 0 40px;
   }
 }
