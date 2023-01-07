@@ -14,17 +14,21 @@
 
   @media (min-width: $tablet-width) {
     &--icon {
-      padding-left: 23px;
+      margin-left: 23px;
     }
   }
 }
 
+.logo-htmlacademy__icon {
+  color: $color-fill-special-grey-2;
+}
+
 .logo-htmlacademy__link--icon:hover .logo-htmlacademy__icon,
 .logo-htmlacademy__link--icon:focus .logo-htmlacademy__icon {
-  stroke: $color-basic-green;
+  color: $color-basic-green;
 }
 
 .logo-htmlacademy__link--icon:active .logo-htmlacademy__icon {
-  stroke: $color-basic-green;
+  color: $color-basic-green;
   opacity: 0.3;
 }

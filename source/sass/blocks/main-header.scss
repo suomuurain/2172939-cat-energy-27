@@ -89,10 +89,6 @@
   }
 }
 
-.main-header__toggle--nojs {
-  display: none;
-}
-
 .main-header__toggle--close::before {
   content: "";
   position: absolute;
@@ -141,4 +137,12 @@
 
 .main-header__toggle:active {
   opacity: 30%;
+}
+
+.main-header--nojs {
+  opacity: 0;
+
+  &:active {
+    opacity: 0;
+  }
 }

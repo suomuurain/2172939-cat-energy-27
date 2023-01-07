@@ -33,12 +33,16 @@
   opacity: 0.3;
 }
 
+.social__link__icon {
+  color: $color-fill-special-grey-2;
+}
+
 .social__link:hover .social__link__icon,
 .social__link:focus .social__link__icon {
-  stroke: $color-basic-green;
+  color: $color-basic-green;
 }
 
 .social__link:active .social__link__icon {
-  stroke: $color-basic-green;
+  color: $color-basic-green;
   opacity: 0.3;
 }
