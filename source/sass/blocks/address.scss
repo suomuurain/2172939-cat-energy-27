@@ -70,17 +70,6 @@
   }
 }
 
-.address__map {
-  width: 100%;
-  height: 362px;
-  display: block;
-  border: none;
-
-  @media (min-width: $tablet-width) {
-    height: 400px;
-  }
-}
-
 .address__wrapper {
   @media (min-width: $desktop-width) {
     position: relative;
@@ -106,5 +95,45 @@
     left: 110px;
     z-index: 1;
     background-color: $color-basic-white;
+  }
+}
+
+.address__map {
+  width: 100%;
+  height: 362px;
+  display: block;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+}
+
+.address__map--nojs {
+  width: 100%;
+  height: 362px;
+  background-image: url("../img/location-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/location-mobile@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/location-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/location-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/location-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/location-desktop@2x.jpg");
+    }
   }
 }
