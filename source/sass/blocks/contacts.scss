@@ -125,6 +125,10 @@
   color: $color-special-dark-grey;
   border: 1px solid $color-border-form;
 
+  &::placeholder {
+    color: $color-special-dark-grey;
+  }
+
   &:hover {
     outline: 1px solid $color-border-special-grey;
   }
