@@ -3,7 +3,7 @@ let toggle = document.querySelector('.main-header__toggle');
 let header = document.querySelector('.main-header__toggle');
 
 nav.classList.remove('main-nav__wrapper--nojs');
-header.classList.remove('main-header--nojs');
+header.classList.remove('main-header__toggle--nojs');
 
 toggle.addEventListener('click', function () {
   if (nav.classList.contains('main-nav__wrapper--close')) {
