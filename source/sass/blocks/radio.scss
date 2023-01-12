@@ -93,6 +93,7 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
     font-size: 20px;
     line-height: 30px;
   }

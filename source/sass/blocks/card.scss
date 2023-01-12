@@ -21,10 +21,14 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    padding: 0 37px 39px;
+    padding: 0 36px 39px 37px;
     background-image: linear-gradient(to bottom, #ffffff 80px, #f2f2f2 80px);
     margin: 0;
     height: calc(430px + 80px);
+
+    &:nth-child(2n) {
+      padding: 0 36px 39px 40px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -35,8 +39,8 @@
 .card__container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-top: 11px;
-  margin-bottom: 13px;
+  margin-top: 14px;
+  margin-bottom: 11px;
 
   @media (min-width: $tablet-width) {
     min-width: 252px;
@@ -65,17 +69,17 @@
   @media (min-width: $tablet-width) {
     max-width: 450px;
     min-width: 252px;
-    margin-bottom: 33px;
+    margin-bottom: 35px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: none;
-    min-width: 180px;
+    min-width: 170px;
   }
 }
 
 .card__subtitle {
-  margin: 0 0 18px;
+  margin: 0 0 15px;
   padding: 0;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -87,13 +91,13 @@
 
   @media (min-width: $tablet-width) {
     text-align: center;
-    margin-bottom: 21px;
+    margin-bottom: 15px;
     font-size: 20px;
     line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 21px;
+    margin-bottom: 19px;
     font-size: 20px;
     line-height: 21px;
   }
@@ -107,17 +111,19 @@
   display: block;
   width: 100%;
   border: none;
+  margin: 0 0 2px;
   padding: 10px 109px;
   font-size: 16px;
   line-height: 20px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    margin: 0;
     padding: 10px 93px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
+    width: 168px;
     padding: 10px 53px;
   }
 }
@@ -150,6 +156,36 @@
       margin-top: 34px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &--chiсken-500 {
+      margin: -9px 0 42px -11px;
+    }
+
+    &--chiсken-1000 {
+      margin: 1px 0 47px -11px;
+    }
+
+    &--fish-500 {
+      margin: -12px 0 43px -11px;
+    }
+
+    &--fish-1000 {
+      margin: 4px 0 44px -4px;
+    }
+
+    &--buckwheat-500 {
+      margin: -10px 0 43px -11px;
+    }
+
+    &--buckwheat-1000 {
+      margin: 0 0 47px -11px;
+    }
+
+    &--rice-500 {
+      margin: -13px 0 43px -11px;
+    }
+  }
 }
 
 .card__image {
@@ -157,7 +193,10 @@
 }
 
 .card__image--chiсken-500 {
+  margin-top: -1px;
+
   @media (min-width: $tablet-width) {
+    margin: 0;
     width: 161px;
     height: 172px;
     top: -45px;
@@ -165,26 +204,39 @@
 }
 
 .card__image--chiсken-1000 {
+  margin-top: 8px;
+
   @media (min-width: $tablet-width) {
+    margin: 0 0 -6px -6px;
+    padding: 0;
     width: 168px;
     height: 206px;
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0;
     width: 172px;
     height: 196px;
   }
 }
 
 .card__image--fish-500 {
+  margin-top: 17px;
+
   @media (min-width: $tablet-width) {
+    margin: 0;
     width: 163px;
     height: 174px;
   }
 }
 
 .card__image--fish-1000 {
+  margin-top: 7px;
+
   @media (min-width: $tablet-width) {
+    margin: -3px 0 3px -6px;
+    padding: 0;
     width: 168px;
     height: 200px;
   }
@@ -196,26 +248,38 @@
 }
 
 .card__image--buckwheat-500 {
+  margin-top: 23px;
+
   @media (min-width: $tablet-width) {
+    margin: 0;
     width: 161px;
     height: 171px;
   }
 }
 
 .card__image--buckwheat-1000 {
+  margin-top: 8px;
+
   @media (min-width: $tablet-width) {
+    margin: -3px 0 3px -6px;
+    padding: 0;
     width: 168px;
     height: 200px;
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 0;
     width: 172px;
     height: 196px;
   }
 }
 
 .card__image--rice-500 {
+  margin-top: 17px;
+
   @media (min-width: $tablet-width) {
+    margin: 0;
     width: 163px;
     height: 174px;
   }

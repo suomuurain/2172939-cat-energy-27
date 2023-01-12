@@ -17,12 +17,13 @@
     width: 93%;
     height: 2px;
     background-color: #68b738;
-    top: 25%;
+    top: 21%;
     right: 0;
 
     @media (min-width: $tablet-width) {
       width: 108%;
       left: -70px;
+      top: 24%;
     }
 
     @media (min-width: $desktop-width) {
@@ -42,8 +43,8 @@
 
 .checkbox__title {
   display: inline-block;
-  margin: 0 0 34px;
-  padding: 0 20px;
+  margin: 0 0 32px;
+  padding: 0 23px 0 20px;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -71,17 +72,17 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 50px;
+    column-gap: 60px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 104px;
+    column-gap: 80px;
   }
 }
 
 .checkbox__item {
-  padding: 0 0 13px;
+  padding: 0 0 12px;
 
   @media (min-width: $tablet-width) {
     padding: 0 0 32px;

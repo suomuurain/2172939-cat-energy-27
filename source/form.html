@@ -100,7 +100,7 @@
             <fieldset class="contacts__fieldset">
               <div class="contacts__title-line">
                 <div class="contacts__title-line-container">
-                  <h2 class="contacts__title">Контактные данные <br class="br-none-for-tablet"> (владельца кота)</h2>
+                  <h2 class="contacts__title">Контактные данные <br class="br-none-for-tablet">&nbsp;(владельца кота)</h2>
                 </div>
               </div>
               <div class="contacts__inner-wrapper container container--form">
@@ -117,9 +117,9 @@
           </div>
           <div class="form__wrapper-comment comment">
             <fieldset class="comment__fieldset">
-              <div class="comment__subtitle-line">
+              <div class="comment__title-line">
                 <div class="comment__title-line-container">
-                  <h2 class="comment__subtitle">Комментарий</h2>
+                  <h2 class="comment__title">Комментарий</h2>
                 </div>
               </div>
               <p class="comment__group container container--form">
@@ -196,7 +196,10 @@
         <div class="main-footer__wrapper">
           <div class="main-footer__logo-text logo-text">
             <a class="logo-text__link" href="index.html">
-              <img class="logo-text__icon" alt="Логотип Кэт энерджи." src="img/icon-logo/cat-energy-footer-logo-text.svg" width="128" height="24">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/icon-logo/cat-energy-footer-logo-text-tablet.svg">
+                <img class="logo-text__icon" alt="Логотип Кэт энерджи." src="img/icon-logo/cat-energy-footer-logo-text-mobile.svg" width="128" height="24">
+              </picture>
             </a>
           </div>
           <section class="main-footer__social social">

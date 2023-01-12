@@ -7,7 +7,7 @@
   border: none;
 }
 
-.comment__subtitle-line {
+.comment__title-line {
   position: relative;
 
   ::before {
@@ -41,10 +41,10 @@
   }
 }
 
-.comment__subtitle {
+.comment__title {
   display: inline-block;
   margin: 0 0 37px;
-  padding: 0 20px;
+  padding: 0 23px 0 20px;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -72,7 +72,7 @@
   min-height: 150px;
   resize: none;
   margin: 0 0 22px;
-  padding: 10px 12px;
+  padding: 10px 14px;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -100,13 +100,13 @@
 
   @media (min-width: $tablet-width) {
     min-height: 174px;
-    margin: 0 0 65px;
+    margin: 0 0 59px;
     padding: 10px 19px;
     font-size: 20px;
     line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 67px;
+    margin: 0 0 62px;
   }
 }

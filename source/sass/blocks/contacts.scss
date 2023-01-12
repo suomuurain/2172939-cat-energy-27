@@ -11,7 +11,7 @@
 
 .contacts__fieldset {
   margin: 0;
-  padding: 26px 0 9px;
+  padding: 27px 0 10px;
   border: none;
 
   @media (min-width: $tablet-width) {
@@ -33,12 +33,13 @@
     width: 93%;
     height: 2px;
     background-color: #68b738;
-    top: 25%;
+    top: 21%;
     right: 0;
 
     @media (min-width: $tablet-width) {
       width: 108%;
       left: -70px;
+      top: 25%;
     }
 
     @media (min-width: $desktop-width) {
@@ -70,7 +71,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 0 56px 30px;
-    padding: 0 42px 0 39px;
+    padding: 0 41px 0 39px;
     font-size: 36px;
     line-height: 36px;
   }
@@ -83,7 +84,7 @@
 }
 
 .contacts__group {
-  margin: 14px 0;
+  margin: 12px 0;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -144,7 +145,7 @@
   &--email {
     background-image: url("../img/icon-logo/email-icon.svg");
     background-repeat: no-repeat;
-    background-position: center right 7%;
+    background-position: center right 8%;
 
     &:focus {
       background-image: url("../img/icon-logo/email-icon-focus.svg");
@@ -155,14 +156,14 @@
     }
 
     @media (min-width: $tablet-width) {
-      background-position: center right 3%;
+      background-position: center right 4%;
     }
   }
 
   &--phone {
     background-image: url("../img/icon-logo/phone-icon.svg");
     background-repeat: no-repeat;
-    background-position: center right 7%;
+    background-position: center right 8%;
 
     &:focus {
       background-image: url("../img/icon-logo/phone-icon-focus.svg");
@@ -173,7 +174,7 @@
     }
 
     @media (min-width: $tablet-width) {
-      background-position: center right 3%;
+      background-position: center right 4%;
     }
   }
 

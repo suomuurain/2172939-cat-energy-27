@@ -6,12 +6,12 @@
   border-top: 1px solid $color-border-gray;
 
   @media (min-width: $tablet-width) {
-    padding: 64px 0 72px;
+    padding: 60px 0 72px;
     border-top: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 73px 0 82px;
+    padding: 71px 0 82px;
     border-top: none;
   }
 }
@@ -65,6 +65,7 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
+    margin-top: 21px;
     flex-direction: row;
     align-items: center;
   }
@@ -75,11 +76,11 @@
 }
 
 .form__button {
-  padding: 7px 44px;
+  padding: 10px 44px;
 
   @media (min-width: $tablet-width) {
     width: 282px;
-    padding: 13px 45px;
+    padding: 16px 45px;
     font-size: 20px;
     line-height: 100%;
   }
@@ -101,7 +102,7 @@
   color: $color-basic-black;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 0 64px;
+    margin: -12px 0 0 62px;
     font-size: 16px;
     line-height: 16px;
   }

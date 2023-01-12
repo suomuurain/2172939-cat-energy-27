@@ -34,7 +34,7 @@
     @media (min-width: $tablet-width) {
       margin: 0;
       top: 57px;
-      left: 77px;
+      left: 78px;
     }
 
     @media (min-width: $desktop-width) {
@@ -46,6 +46,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin: 69px auto 76px;
     height: 200px;
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/cat-bag-background-promo-tablet.jpg");
 
@@ -58,7 +59,7 @@
     width: 245px;
     height: 288px;
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/cat-bag-background-promo-desktop.jpg");
-    margin: 0 0 35px 86px;
+    margin: 0 0 35px 80px;
 
     @media (min-resolution: 2dppx) {
       background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/cat-bag-background-promo-desktop@2x.jpg");

@@ -23,6 +23,7 @@
   color: $color-special-black;
 
   @media (min-width: $tablet-width) {
+    margin: 5px 0;
     min-width: 172px;
     font-size: 20px;
     line-height: 26px;
@@ -30,14 +31,14 @@
 
   @media (min-width: $desktop-width) {
     min-width: 163px;
-    padding: 0 87px 0 0;
+    padding: 0 95px 0 0;
   }
 }
 
 .address__link {
   min-width: 139px;
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 3px;
   font-family: "Lato", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -51,6 +52,7 @@
     font-size: 16px;
     line-height: 20px;
     text-align: end;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -84,7 +86,7 @@
 
   @media (min-width: $tablet-width) {
     min-height: 199px;
-    padding: 56px 70px;
+    padding: 56px 70px 38px;
   }
 
   @media (min-width: $desktop-width) {
@@ -107,6 +109,10 @@
   @media (min-width: $tablet-width) {
     height: 400px;
   }
+
+  @media (min-width: $desktop-width) {
+    height: 400px;
+  }
 }
 
 .address__map--nojs {
@@ -122,6 +128,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    height: 400px;
     background-image: url("../img/location-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -130,6 +137,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    height: 400px;
     background-image: url("../img/location-desktop.jpg");
 
     @media (min-resolution: 2dppx) {
