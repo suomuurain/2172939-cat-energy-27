@@ -11,7 +11,7 @@
 
 .application__order {
   margin: 0;
-  padding: 0 0 10px 0;
+  padding: 0 0 9px 0;
   border: none;
   position: relative;
 
@@ -40,7 +40,7 @@
 
 .application__radio {
   margin: 0;
-  padding: 22px 0 6px;
+  padding: 22px 0 5px;
   border: none;
   position: relative;
 
@@ -64,7 +64,7 @@
     border: 1px solid $color-border-form;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     margin: 20px 0 65px;
     padding: 25px 0 12px;
     border: 1px solid $color-border-form;

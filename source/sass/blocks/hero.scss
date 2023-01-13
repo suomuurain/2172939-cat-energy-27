@@ -15,7 +15,7 @@
       background-size: cover;
       background-position: center;
       z-index: -3;
-      top: -116px;
+      top: -117px;
       right: 0;
 
       @media (min-resolution: 2dppx) {
@@ -30,7 +30,7 @@
       height: 694px;
       background-color: $color-bg-basic-green-85;
       z-index: -2;
-      top: -116px;
+      top: -117px;
       right: 0;
     }
   }
@@ -41,21 +41,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  padding-top: 27px;
+  margin: 5px auto 20px;
+  padding-top: 22px;
 
   @media (min-width: $tablet-width) {
     min-height: 865px;
     align-items: flex-start;
-    padding-top: 55px;
+    padding-top: 0;
     padding-left: 117px;
-    margin-bottom: 0;
+    margin: 0 auto 4px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 1440px;
-    min-height: 694px;
+    min-height: 659px;
     align-items: flex-start;
     padding-left: 190px;
     margin-bottom: 0;
@@ -71,7 +70,7 @@
     background-size: cover;
     background-position: center;
     z-index: -2;
-    top: 0;
+    top: -5px;
     left: 0;
 
     @media (min-resolution: 2dppx) {
@@ -90,7 +89,7 @@
     height: 302px;
     background-color: $color-bg-basic-green-85;
     z-index: -1;
-    top: 0;
+    top: -5px;
     left: 0;
 
     @media (min-width: $tablet-width) {
@@ -112,14 +111,15 @@
 
   @media (min-width: $tablet-width) {
     color: $color-basic-black;
+    margin-top: 59px;
     margin-bottom: 41px;
     font-size: 60px;
     line-height: 60px;
     text-align: left;
   }
 
-  @media (min-width: $tablet-width) {
-    margin-top: 56px;
+  @media (min-width: $desktop-width) {
+    margin-top: 107px;
   }
 }
 
@@ -148,12 +148,9 @@
   }
 }
 
-.hero__figure {
-  margin: 0;
-}
-
 .hero__image {
   display: block;
+  margin-bottom: 3px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -163,20 +160,21 @@
     width: 709px;
     height: 609px;
     z-index: -1;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 552px;
     height: 499px;
     left: 558px;
-    bottom: 170px;
+    bottom: 136px;
   }
 }
 
 .hero__button {
   min-width: 280px;
   height: 40px;
-  padding: 10px 44px;
+  padding: 11px 44px;
   font-size: 14px;
   line-height: 18px;
 
@@ -185,8 +183,8 @@
     line-height: 20px;
     min-width: 244px;
     height: 54px;
-    padding: 16px 26px;
-    margin-top: 29px;
+    padding: 16px 30px;
+    margin-top: 30px;
   }
 
   @media (min-width: $desktop-width) {

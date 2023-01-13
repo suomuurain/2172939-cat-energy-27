@@ -3,13 +3,17 @@
 
 .main-footer {
   background-color: $color-bg-basic-grey;
+  min-height: 240px;
 
   @media (min-width: $tablet-width) {
-    padding: 19px 0 23px;
+    margin: 0;
+    padding: 36px 0 23px;
+    min-height: 147px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 24px 0 28px;
+    padding: 49px 0 28px;
+    min-height: 169px;
   }
 }
 
@@ -23,7 +27,7 @@
 .main-footer__logo-text {
   display: flex;
   justify-content: center;
-  padding: 39px 0 32px;
+  padding: 39px 0 14px;
   border-bottom: 1px solid $color-border-gray;
 
   @media (min-width: $tablet-width) {
@@ -36,7 +40,7 @@
 .main-footer__social {
   display: flex;
   justify-content: center;
-  padding: 22px 0;
+  padding: 22px 0 20px;
   border-bottom: 1px solid $color-border-gray;
 
   @media (min-width: $tablet-width) {

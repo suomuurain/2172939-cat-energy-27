@@ -6,12 +6,12 @@
   border-top: 1px solid $color-border-gray;
 
   @media (min-width: $tablet-width) {
-    padding: 64px 0 0;
+    padding: 59px 0 0;
     border-top: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 74px 0 0;
+    padding: 71px 0 0;
   }
 }
 
@@ -57,23 +57,28 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 60px;
+    column-gap: 58px;
+    row-gap: 61px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(4, 245px);
     column-gap: 80px;
-    row-gap: 63px;
+    row-gap: 65px;
   }
 }
 
 .catalog__card {
-  padding-bottom: 25px;
+  padding-bottom: 22px;
   padding-top: 8px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 39px;
     padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 39px 38px 0 39px;
   }
 }

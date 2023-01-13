@@ -2,6 +2,8 @@
 @use "global/mixins.scss" as *;
 
 .main-header {
+  min-width: 66px;
+
   @media (min-width: $tablet-width) {
     display: flex;
   }
@@ -15,7 +17,7 @@
 .main-header__wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 10px 0 17px;
+  padding: 10px 0 12px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -45,7 +47,7 @@
   @media (min-width: $tablet-width) {
     width: 174px;
     height: 52px;
-    margin-top: 25px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -74,12 +76,12 @@
 
 .main-header__toggle {
   position: relative;
-  top: 14px;
+  top: 11px;
   right: 0;
   left: 0;
   width: 16px;
   height: 24px;
-  padding-left: 30px;
+  padding-left: 27px;
   border: none;
   cursor: pointer;
   background-color: transparent;
@@ -103,7 +105,8 @@
 .main-header__toggle--open {
   position: relative;
   top: 9px;
-  right: -2px;
+  right: 0;
+  left: 0;
   height: 24px;
   padding-top: 3px;
   padding-left: 30px;
@@ -119,8 +122,8 @@
   &::after {
     content: "";
     position: absolute;
-    top: 14px;
-    left: 10px;
+    top: 11px;
+    left: 12px;
     width: 24px;
     height: 2px;
     background-color: $color-basic-black;
@@ -139,7 +142,7 @@
   opacity: 30%;
 }
 
-.main-header--nojs {
+.main-header__toggle--nojs {
   opacity: 0;
 
   &:active {

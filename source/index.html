@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/oswald/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="icon" href="favicon.ico"><!-- 32×32 -->
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
@@ -22,7 +25,7 @@
           </picture>
           <img class="main-header__logo-text-icon" alt="Логотип Кэт энерджи." src="img/icon-logo/cat-energy-header-logo-text.svg" width="101" height="18">
         </a>
-        <button class="main-header__toggle main-header__toggle--close main-header--nojs" type="button">
+        <button class="main-header__toggle main-header__toggle--close main-header__toggle--nojs" type="button">
           <span class="visually-hidden">Открыть меню.</span>
         </button>
       </div>
@@ -109,7 +112,7 @@
           <div class="example__inner-wrapper">
             <h2 class="example__title">Живой пример</h2>
             <div class="example__inner-wrapper">
-              <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+              <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без&nbsp;изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
               <div class="example__list-wrapper">
                 <dl class="example__list">
                   <div class="example__item">
@@ -159,7 +162,10 @@
         <div class="main-footer__wrapper">
           <div class="main-footer__logo-text logo-text">
             <a class="logo-text__link" href="index.html">
-              <img class="logo-text__icon" alt="Логотип Кэт энерджи." src="img/icon-logo/cat-energy-footer-logo-text.svg" width="128" height="24">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/icon-logo/cat-energy-footer-logo-text-tablet.svg">
+                <img class="logo-text__icon" alt="Логотип Кэт энерджи." src="img/icon-logo/cat-energy-footer-logo-text-mobile.svg" width="128" height="24">
+              </picture>
             </a>
           </div>
           <section class="main-footer__social social">

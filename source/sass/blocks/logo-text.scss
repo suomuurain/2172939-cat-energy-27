@@ -1,6 +1,16 @@
 @use "global/variables.scss" as *;
 @use "global/mixins.scss" as *;
 
+.logo-text__icon {
+  width: 128px;
+  height: 24px;
+
+  @media (min-width: $tablet-width) {
+    width: 143px;
+    height: 27px;
+  }
+}
+
 .logo-text__link:hover .logo-text__icon,
 .logo-text__link:focus .logo-text__icon {
   opacity: 0.8;

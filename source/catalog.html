@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/oswald/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="icon" href="favicon.ico"><!-- 32×32 -->
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
@@ -22,7 +25,7 @@
           </picture>
           <img class="main-header__logo-text-icon" alt="Логотип Кэт энерджи." src="img/icon-logo/cat-energy-header-logo-text.svg" width="101" height="18">
         </a>
-        <button class="main-header__toggle main-header__toggle--close main-header--nojs" type="button">
+        <button class="main-header__toggle main-header__toggle--close main-header__toggle--nojs" type="button">
           <span class="visually-hidden">Открыть меню.</span>
         </button>
       </div>
@@ -65,7 +68,7 @@
                     </a>
                     <div class="card__wrapper">
                       <a class="card__link" href="#">
-                        <h3 class="card__subtitle">Cat Energy <br class="br-none-for-tablet"> PRO<br class="br-none-for-mobile"> 500 г</h3>
+                        <h3 class="card__subtitle">Cat Energy&nbsp; <br class="br-none-for-tablet">PRO&nbsp;<br class="br-none-for-mobile">500 г</h3>
                       </a>
                       <dl class="card__desc desc">
                         <div class="desc__wrapper">
@@ -83,18 +86,16 @@
                       </dl>
                     </div>
                   </div>
-                  <div class="card__wrapper-button">
-                    <button class="card__button button" type="button">Заказать</button>
-                  </div>
+                  <a class="card__button button" href="#">Заказать</a>
                 </li>
                 <li class="catalog__card card">
                   <div class="card__container">
                     <a class="card__link-image" href="#">
-                      <div class="card__container-image">
+                      <div class="card__container-image card__container-image--chiсken-1000">
                         <picture>
                           <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog/pro-chicken-1000-desktop.webp 1x, img/catalog/pro-chicken-1000-desktop@2x.webp 2x">
                           <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/pro-chicken-1000-tablet.webp 1x, img/catalog/pro-chicken-1000-tablet@2x.webp 2x">
-                          <source type="image/webp" srcset="img/catalog/pro-chicken-1000-mobile.webp 1x, img/catalog/pro-chicken-1000-mobile@2x.webp 2x">
+                          <source type="image/webp" srcset="img/catalog/pro-chiсken-1000-mobile.webp 1x, img/catalog/pro-chiсken-1000-mobile@2x.webp 2x">
                           <source media="(min-width: 1440px)" srcset="img/catalog/pro-chicken-1000-desktop.png 1x, img/catalog/pro-chicken-1000-desktop@2x.png 2x">
                           <source media="(min-width: 768px)" srcset="img/catalog/pro-chicken-1000-tablet.png 1x, img/catalog/pro-chicken-1000-tablet@2x.png 2x">
                           <img class="card__image card__image--chiсken-1000" alt="Упаковка Кэт энерджи с курицей 1000г." src="img/catalog/pro-chiсken-1000-mobile.png" srcset="img/catalog/pro-chiсken-1000-mobile@2x.png 2x" width="84" height="100">
@@ -103,7 +104,7 @@
                     </a>
                     <div class="card__wrapper">
                       <a class="card__link" href="#">
-                        <h3 class="card__subtitle">Cat Energy <br class="br-none-for-tablet">PRO <br class="br-none-for-mobile">1000 г</h3>
+                        <h3 class="card__subtitle">Cat Energy&nbsp;<br class="br-none-for-tablet">PRO&nbsp;<br class="br-none-for-mobile">1000 г</h3>
                       </a>
                       <dl class="card__desc desc">
                         <div class="desc__wrapper">
@@ -121,9 +122,7 @@
                       </dl>
                     </div>
                   </div>
-                  <div class="card__wrapper-button">
-                    <button class="card__button button" type="button">Заказать</button>
-                  </div>
+                  <a class="card__button button" href="#">Заказать</a>
                 </li>
                 <li class="catalog__card card">
                   <div class="card__container">
@@ -131,7 +130,7 @@
                       <div class="card__container-image card__container-image--fish-500">
                         <picture>
                           <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/pro-fish-500-tablet.webp 1x, img/catalog/pro-fish-500-tablet@2x.webp 2x">
-                          <source type="image/webp" srcset="img/catalog/img/catalog/pro-fish-500-mobile.webp 1x, img/catalog/img/catalog/pro-fish-500-mobile@2x.webp 2x">
+                          <source type="image/webp" srcset="img/catalog/pro-fish-500-mobile.webp 1x, img/catalog/pro-fish-500-mobile@2x.webp 2x">
                           <source media="(min-width: 768px)" srcset="img/catalog/pro-fish-500-tablet.png 1x, img/catalog/pro-fish-500-tablet@2x.png 2x">
                           <img class="card__image card__image--fish-500" alt="Упаковка Кэт энерджи с рыбой 500г." src="img/catalog/pro-fish-500-mobile.png"  srcset="img/catalog/pro-fish-500-mobile@2x.png 2x" width="68" height="78">
                         </picture>
@@ -139,7 +138,7 @@
                     </a>
                     <div class="card__wrapper">
                       <a class="card__link" href="#">
-                        <h3 class="card__subtitle">Cat Energy <br class="br-none-for-tablet">PRO <br class="br-none-for-mobile">500 г</h3>
+                        <h3 class="card__subtitle">Cat Energy&nbsp; <br class="br-none-for-tablet">PRO&nbsp;<br class="br-none-for-mobile">500 г</h3>
                       </a>
                       <dl class="card__desc desc">
                         <div class="desc__wrapper">
@@ -157,14 +156,12 @@
                       </dl>
                     </div>
                   </div>
-                  <div class="card__wrapper-button">
-                    <button class="card__button button" type="button">Заказать</button>
-                  </div>
+                  <a class="card__button button" href="#">Заказать</a>
                 </li>
                 <li class="catalog__card card">
                   <div class="card__container">
                     <a class="card__link-image" href="#">
-                      <div class="card__container-image">
+                      <div class="card__container-image card__container-image--fish-1000">
                         <picture>
                           <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog/pro-fish-1000-desktop.webp 1x, img/catalog/pro-fish-1000-desktop@2x.webp 2x">
                           <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/pro-fish-1000-tablet.webp 1x, img/catalog/pro-fish-1000-tablet@2x.webp 2x">
@@ -177,7 +174,7 @@
                     </a>
                     <div class="card__wrapper">
                       <a class="card__link" href="#">
-                        <h3 class="card__subtitle">Cat Energy <br class="br-none-for-tablet">PRO <br class="br-none-for-mobile">1000 г</h3>
+                        <h3 class="card__subtitle">Cat Energy&nbsp;<br class="br-none-for-tablet">PRO&nbsp;<br class="br-none-for-mobile">1000 г</h3>
                       </a>
                       <dl class="card__desc desc">
                         <div class="desc__wrapper">
@@ -195,9 +192,7 @@
                       </dl>
                     </div>
                   </div>
-                  <div class="card__wrapper-button">
-                    <button class="card__button button" type="button">Заказать</button>
-                  </div>
+                  <a class="card__button button" href="#">Заказать</a>
                 </li>
                 <li class="catalog__card card">
                   <div class="card__container">
@@ -213,7 +208,7 @@
                     </a>
                     <div class="card__wrapper">
                       <a class="card__link" href="#">
-                        <h3 class="card__subtitle">Cat Energy <br class="br-none-for-tablet">slim <br class="br-none-for-mobile">500 г</h3>
+                        <h3 class="card__subtitle">Cat Energy&nbsp; <br class="br-none-for-tablet">slim&nbsp;<br class="br-none-for-mobile">500 г</h3>
                       </a>
                       <dl class="card__desc desc">
                         <div class="desc__wrapper">
@@ -231,14 +226,12 @@
                       </dl>
                     </div>
                   </div>
-                  <div class="card__wrapper-button">
-                    <button class="card__button button" type="button">Заказать</button>
-                  </div>
+                  <a class="card__button button" href="#">Заказать</a>
                 </li>
                 <li class="catalog__card card">
                   <div class="card__container">
                     <a class="card__link-image" href="#">
-                      <div class="card__container-image">
+                      <div class="card__container-image card__container-image--buckwheat-1000">
                         <picture>
                           <source type="image/webp" media="(min-width: 1440px)" srcset="img/catalog/slim-buckwheat-1000-desktop.webp 1x, img/catalog/slim-buckwheat-1000-desktop@2x.webp 2x">
                           <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/slim-buckwheat-1000-tablet.webp 1x, img/catalog/slim-buckwheat-1000-tablet@2x.webp 2x">
@@ -251,7 +244,7 @@
                     </a>
                     <div class="card__wrapper">
                       <a class="card__link" href="#">
-                        <h3 class="card__subtitle">Cat Energy <br class="br-none-for-tablet">slim <br class="br-none-for-mobile">1000 г</h3>
+                        <h3 class="card__subtitle">Cat Energy&nbsp;<br class="br-none-for-tablet">slim&nbsp;<br class="br-none-for-mobile">1000 г</h3>
                       </a>
                       <dl class="card__desc desc">
                         <div class="desc__wrapper">
@@ -269,9 +262,7 @@
                       </dl>
                     </div>
                   </div>
-                  <div class="card__wrapper-button">
-                    <button class="card__button button" type="button">Заказать</button>
-                  </div>
+                  <a class="card__button button" href="#">Заказать</a>
                 </li>
                 <li class="catalog__card card">
                   <div class="card__container">
@@ -287,7 +278,7 @@
                     </a>
                     <div class="card__wrapper">
                       <a class="card__link" href="#">
-                        <h3 class="card__subtitle">Cat Energy <br class="br-none-for-tablet">slim <br class="br-none-for-mobile">500 г</h3>
+                        <h3 class="card__subtitle">Cat Energy&nbsp;<br class="br-none-for-tablet">slim&nbsp;<br class="br-none-for-mobile">500 г</h3>
                       </a>
                       <dl class="card__desc desc">
                         <div class="desc__wrapper">
@@ -305,18 +296,14 @@
                       </dl>
                     </div>
                   </div>
-                  <div class="card__wrapper-button">
-                    <button class="card__button button" type="button">Заказать</button>
-                  </div>
+                  <a class="card__button button" href="#">Заказать</a>
                 </li>
                 <li class="catalog__card catalog__pagination pagination">
                   <div class="pagination__container">
-                    <p class="pagination__title">Показать еще<br class="br-none-for-mobile"> 100500 товаров</p>
-                    <p class="pagination__description">На самом деле вкусов<br class="br-none-for-mobile"> гораздо больше!</p>
+                    <p class="pagination__title">Показать еще&nbsp;<br class="br-none-for-mobile"> 100500 товаров</p>
+                    <p class="pagination__description">На самом деле вкусов&nbsp;<br class="br-none-for-mobile"> гораздо больше!</p>
                   </div>
-                  <div class="pagination__wrapper-button">
-                    <button class="pagination__button button button--secondary" type="button">Показать все</button>
-                  </div>
+                  <button class="pagination__button button button--secondary" type="button">Показать все</button>
                 </li>
               </ul>
             </div>
@@ -386,7 +373,7 @@
                 </ul>
               </div>
               <div class="catalog-suplement__promo promo">
-                <h3 class="visually-hidden">Промоакция.</h3>
+                <h2 class="visually-hidden">Промоакция.</h2>
                 <p class="promo__description">Закажите все <br> и получите чехол для <br> кота в подарок!</p>
               </div>
             </div>
@@ -414,7 +401,10 @@
         <div class="main-footer__wrapper">
           <div class="main-footer__logo-text logo-text">
             <a class="logo-text__link" href="index.html">
-              <img class="logo-text__icon" alt="Логотип Кэт энерджи." src="img/icon-logo/cat-energy-footer-logo-text.svg" width="128" height="24">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/icon-logo/cat-energy-footer-logo-text-tablet.svg">
+                <img class="logo-text__icon" alt="Логотип Кэт энерджи." src="img/icon-logo/cat-energy-footer-logo-text-mobile.svg" width="128" height="24">
+              </picture>
             </a>
           </div>
           <section class="main-footer__social social">
