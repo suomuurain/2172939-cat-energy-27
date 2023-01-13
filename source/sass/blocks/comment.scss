@@ -16,7 +16,7 @@
     z-index: -1;
     width: 93%;
     height: 2px;
-    background-color: #68b738;
+    background-color: $color-basic-green;
     top: 25%;
     right: 0;
 
@@ -45,7 +45,7 @@
   display: inline-block;
   margin: 0 0 37px;
   padding: 0 23px 0 20px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $font-oswald;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -73,7 +73,7 @@
   resize: none;
   margin: 0 0 22px;
   padding: 10px 14px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $font-oswald;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;

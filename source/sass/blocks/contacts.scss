@@ -32,7 +32,7 @@
     z-index: -1;
     width: 93%;
     height: 2px;
-    background-color: #68b738;
+    background-color: $color-basic-green;
     top: 21%;
     right: 0;
 
@@ -61,7 +61,7 @@
   display: inline-block;
   margin: 0 0 21px;
   padding: 0 20px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $font-oswald;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -97,7 +97,7 @@
 .contacts__text {
   margin: 0 10px 0 0;
   padding: 0;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $font-oswald;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -117,7 +117,7 @@
   width: 100%;
   margin: 0;
   padding: 15px 40px 13px 15px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $font-oswald;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;

@@ -11,11 +11,13 @@
   }
 }
 
-.logo-text__link:hover .logo-text__icon,
-.logo-text__link:focus .logo-text__icon {
-  opacity: 0.8;
-}
+.logo-text__link {
+  &:hover .logo-text__icon,
+  .logo-text__link:focus .logo-text__icon {
+    opacity: 0.8;
+  }
 
-.logo-text__link:active .logo-text__icon {
-  opacity: 0.6;
+  &:active .logo-text__icon {
+    opacity: 0.6;
+  }
 }

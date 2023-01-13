@@ -22,7 +22,7 @@
   @media (min-width: $tablet-width) {
     width: 100%;
     padding: 0 36px 39px 37px;
-    background-image: linear-gradient(to bottom, #ffffff 80px, #f2f2f2 80px);
+    background-image: linear-gradient(to bottom, $color-basic-white 80px, $color-border-basic-grey 80px);
     margin: 0;
     height: calc(430px + 80px);
 
@@ -79,9 +79,10 @@
 }
 
 .card__subtitle {
-  margin: 0 0 15px;
+  max-width: 76px;
+  margin: 0 auto 15px 0;
   padding: 0;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $font-oswald;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -91,13 +92,14 @@
 
   @media (min-width: $tablet-width) {
     text-align: center;
-    margin-bottom: 15px;
+    max-width: 140px;
+    margin: 0 auto 15px 55px;
     font-size: 20px;
     line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 19px;
+    margin: 0 auto 19px 11px;
     font-size: 20px;
     line-height: 21px;
   }
@@ -190,97 +192,97 @@
 
 .card__image {
   display: block;
-}
 
-.card__image--chiсken-500 {
-  margin-top: -1px;
+  &--chiсken-500 {
+    margin-top: -1px;
 
-  @media (min-width: $tablet-width) {
-    margin: 0;
-    width: 161px;
-    height: 172px;
-    top: -45px;
-  }
-}
-
-.card__image--chiсken-1000 {
-  margin-top: 8px;
-
-  @media (min-width: $tablet-width) {
-    margin: 0 0 -6px -6px;
-    padding: 0;
-    width: 168px;
-    height: 206px;
+    @media (min-width: $tablet-width) {
+      margin: 0;
+      width: 161px;
+      height: 172px;
+      top: -45px;
+    }
   }
 
-  @media (min-width: $desktop-width) {
-    margin: 0;
-    padding: 0;
-    width: 172px;
-    height: 196px;
-  }
-}
+  &--chiсken-1000 {
+    margin-top: 8px;
 
-.card__image--fish-500 {
-  margin-top: 17px;
+    @media (min-width: $tablet-width) {
+      margin: 0 0 -6px -6px;
+      padding: 0;
+      width: 168px;
+      height: 206px;
+    }
 
-  @media (min-width: $tablet-width) {
-    margin: 0;
-    width: 163px;
-    height: 174px;
-  }
-}
-
-.card__image--fish-1000 {
-  margin-top: 7px;
-
-  @media (min-width: $tablet-width) {
-    margin: -3px 0 3px -6px;
-    padding: 0;
-    width: 168px;
-    height: 200px;
+    @media (min-width: $desktop-width) {
+      margin: 0;
+      padding: 0;
+      width: 172px;
+      height: 196px;
+    }
   }
 
-  @media (min-width: $desktop-width) {
-    width: 172px;
-    height: 196px;
-  }
-}
+  &--fish-500 {
+    margin-top: 17px;
 
-.card__image--buckwheat-500 {
-  margin-top: 23px;
-
-  @media (min-width: $tablet-width) {
-    margin: 0;
-    width: 161px;
-    height: 171px;
-  }
-}
-
-.card__image--buckwheat-1000 {
-  margin-top: 8px;
-
-  @media (min-width: $tablet-width) {
-    margin: -3px 0 3px -6px;
-    padding: 0;
-    width: 168px;
-    height: 200px;
+    @media (min-width: $tablet-width) {
+      margin: 0;
+      width: 163px;
+      height: 174px;
+    }
   }
 
-  @media (min-width: $desktop-width) {
-    margin: 0;
-    padding: 0;
-    width: 172px;
-    height: 196px;
+  &--fish-1000 {
+    margin-top: 7px;
+
+    @media (min-width: $tablet-width) {
+      margin: -3px 0 3px -6px;
+      padding: 0;
+      width: 168px;
+      height: 200px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 172px;
+      height: 196px;
+    }
   }
-}
 
-.card__image--rice-500 {
-  margin-top: 17px;
+  &--buckwheat-500 {
+    margin-top: 23px;
 
-  @media (min-width: $tablet-width) {
-    margin: 0;
-    width: 163px;
-    height: 174px;
+    @media (min-width: $tablet-width) {
+      margin: 0;
+      width: 161px;
+      height: 171px;
+    }
+  }
+
+  &--buckwheat-1000 {
+    margin-top: 8px;
+
+    @media (min-width: $tablet-width) {
+      margin: -3px 0 3px -6px;
+      padding: 0;
+      width: 168px;
+      height: 200px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
+      padding: 0;
+      width: 172px;
+      height: 196px;
+    }
+  }
+
+  &--rice-500 {
+    margin-top: 17px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+      width: 163px;
+      height: 174px;
+    }
   }
 }

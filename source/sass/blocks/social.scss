@@ -38,22 +38,22 @@
   @media (min-width: $tablet-width) {
     padding: 0;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover .social__link-icon,
+  &:focus .social__link-icon {
+    color: $color-basic-green;
+  }
+
+  &:active .social__link-icon {
+    color: $color-basic-green;
+    opacity: 0.3;
+  }
 }
 
-.logo-htmlacademy__link:active {
-  opacity: 0.3;
-}
-
-.social__link__icon {
+.social__link-icon {
   color: $color-fill-special-grey-2;
-}
-
-.social__link:hover .social__link__icon,
-.social__link:focus .social__link__icon {
-  color: $color-basic-green;
-}
-
-.social__link:active .social__link__icon {
-  color: $color-basic-green;
-  opacity: 0.3;
 }

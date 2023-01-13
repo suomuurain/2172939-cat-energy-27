@@ -4,7 +4,7 @@ body {
   min-width: 320px;
   margin: 0 auto;
   min-height: 100%;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $font-oswald;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -34,23 +34,13 @@ body {
     margin: 0 auto;
     padding: 0 110px;
   }
-}
 
-.container--form {
-  min-width: 320px;
-  margin: 0 auto;
-  padding: 0 20px;
-
-  @media (min-width: $tablet-width) {
-    min-width: 768px;
-    margin: 0 auto;
-    padding: 0 70px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1440px;
-    margin: 0 auto;
-    padding: 0 110px;
+  &--form {
+    @media (min-width: $tablet-width) {
+      min-width: 768px;
+      margin: 0 auto;
+      padding: 0 70px;
+    }
   }
 }
 
