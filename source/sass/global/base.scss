@@ -41,6 +41,12 @@ body {
       margin: 0 auto;
       padding: 0 70px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 1440px;
+      margin: 0 auto;
+      padding: 0 110px;
+    }
   }
 }
 
