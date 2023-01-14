@@ -158,12 +158,11 @@
     background-repeat: no-repeat;
     width: 32px;
     height: 12px;
-    top: 5px;
+    top: calc(50% - 6px);
     right: -47px;
 
     @media (min-width: $tablet-width) {
       right: -60px;
-      top: 9px;
     }
   }
 
