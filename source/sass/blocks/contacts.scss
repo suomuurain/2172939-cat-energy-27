@@ -138,7 +138,7 @@
     outline: 2px solid $color-special-dark-grey;
   }
 
-  &:invalid {
+  &:invalid:not(:placeholder-shown) {
     outline: 2px solid $color-border-status-error;
   }
 
@@ -151,7 +151,7 @@
       background-image: url("../img/icon-logo/email-icon-focus.svg");
     }
 
-    &:invalid {
+    &:invalid:not(:placeholder-shown) {
       background-image: url("../img/icon-logo/email-icon-invalid.svg");
     }
 
@@ -169,7 +169,7 @@
       background-image: url("../img/icon-logo/phone-icon-focus.svg");
     }
 
-    &:invalid {
+    &:invalid:not(:placeholder-shown) {
       background-image: url("../img/icon-logo/phone-icon-invalid.svg");
     }
 
