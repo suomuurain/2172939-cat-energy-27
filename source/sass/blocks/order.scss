@@ -55,7 +55,7 @@
     outline: 2px solid $color-special-dark-grey;
   }
 
-  &:invalid:not(:placeholder-shown)  {
+  &:invalid:not(:placeholder-shown) {
     outline: 2px solid $color-border-status-error;
   }
 
